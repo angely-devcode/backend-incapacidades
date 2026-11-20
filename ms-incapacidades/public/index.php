@@ -36,7 +36,7 @@ $app->add(function (Request $request, RequestHandler $handler): Response {
 $app->get('/ping', function (Request $request, Response $response) {
     $payload = json_encode([
         'status' => 'ok',
-        'mensaje' => 'Microservicio Slim + Eloquent funcionando correctamente'
+        'mensaje' => 'ms-incapacidades activo en el puerto 8003'
     ]);
     $response->getBody()->write($payload);
     return $response->withHeader('Content-Type', 'application/json');
